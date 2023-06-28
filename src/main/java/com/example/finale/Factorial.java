@@ -6,8 +6,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class Factorial {
-    @RestController
-    public class ControllerMethode {
         private int total;
         @GetMapping("api/factorial")
         public int getFactor(@RequestParam int number) {
@@ -24,5 +22,4 @@ public class Factorial {
             return this.total;
         }
 
-    }
 }
